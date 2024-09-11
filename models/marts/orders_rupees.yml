@@ -1,0 +1,16 @@
+models:
+  - name: orders_rupees
+    description: '{{doc("orders_rupees")}}'
+    
+    columns:
+      - name: order_id
+        description: The unique key of the orders mart.
+        data_tests:
+          - not_null
+          - unique
+      - name: amount_in_cents
+        description: The column consist of amount in cents
+
+      - name: amount_in_rupees
+        description: The total amount of the order in rupees including tax.
+     
